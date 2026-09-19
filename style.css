@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 scrollbar-color: #0cc;
-  cursor: url(./cursor.png) 0 0, alias;
+  cursor: pointer;
 }
 
 body {
