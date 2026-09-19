@@ -7,14 +7,14 @@ scrollbar-color: #0cc;
 }
 
 body {
-  background: linear-gradient(midnightblue,orange);
+  background: linear-gradient(skyblue,red,orange);
   height: 120vh;
   width: 100%;
 }
 
 #boss {
   display: flex;
-    background: linear-gradient(midnightblue,orange);
+  background: linear-gradient(skyblue,red,orange);
   width: 100%;
   height: 100vh;
 }
