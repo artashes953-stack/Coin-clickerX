@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+scrollbar-color: #0cc;
+  cursor: url(./cursor.png) 0 0, alias;
+}
+
+body {
+  background: linear-gradient(midnightblue,orange);
+  height: 120vh;
+  width: 100%;
+}
+
+#boss {
+  display: flex;
+    background: linear-gradient(midnightblue,orange);
+  width: 100%;
+  height: 100vh;
+}
+
+#zone1, #zone2-panel, #zone3 {
+  width: 33.3333333333%;
+  height: 100vh;
+  position: relative;
+}
+
+#zone1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#Adminh1{
+  color: white;
+    font-size: 2rem; 
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#zone3 {
+  height: 30%;
+  flex-direction: column;
+  border: 7px solid black;
+}
+
+#coinsp, #rebp {
+  font-size: 4rem; 
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#click,
+#rebclick {
+  border: none;
+  background: none;
+  font-size: 8rem; 
+}
+
+
+
+#zone2-panel{
+  transition: .8s;
+  height: 100vh;
+}
+#h1Shop {
+  position: absolute;
+  left: 10%; 
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#dog, #cat, #lion,#Profbtn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  font-size: 1rem;
+  display: flex;
+  gap: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transition: .8s;
+  border-radius: 10px;
+  border: none;
+}
+#dog:hover,#cat:hover,#lion:hover{
+  scale: 1.2;
+  box-shadow: 0 0 60px red;
+  border-radius: 20px;
+    perspective: 800px;
+  transform: 
+  rotateX(44deg)
+  rotate(15deg);
+}
+#Profbtn{
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 300px;
+}
+#Profbtn:hover{
+    scale: 1.2;
+  box-shadow: 0 0 60px red;
+  border-radius: 20px;
+    perspective: 800px;
+  transform: 
+  rotateX(35deg)
+  rotate(10deg);
+}
+#dog:active,#cat:active,#lion:active ,#Profbtn:active{
+  scale: .9;
+}
+#dog {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: black;
+  color: white;
+}
+
+#cat {
+  left: 200px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  background: brown;
+}
+
+#lion {
+  left: 300px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  background: orange;
+}
+#adminpassword,#Enter{
+  padding: 20px 25px;
+  border-radius: 20px;
+    border: none;
+}
+#first{
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 50vh;
+    transition: .6s;
+}
+#adminpassword{
+
+}
+#Enter{
+  background: cyan;
+  border: 1px solid black;
+  box-shadow: 0 0 40px orange;
+  transition: .8s;
+}
+#Enter:active{
+}
+#Enter:hover{
+  perspective: 800px;
+  transform: 
+  rotateX(50deg)
+  rotate(15deg);
+scale: 1.2;
+}
+#adminbox{
+    position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 70vh;
+  opacity: 0;
+  transition: .8s;
+}
+#addsetcoins,#addsetpower,#aninp{
+  padding: 20px 25px;
+  caret-color: #2CFF05;
+    border: 3px solid black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Addcoins,#Setcoins,#Addpower,#Setpower,#announcebtn,#Showpower{
+  padding: 20px 25px;
+  background: cyan;
+  border: 3px solid black;
+  transition: .8s;
+}
+#announcebtn:hover,#Addcoins:hover,#Setcoins:hover,#Addpower:hover,#Setpower:hover,#Showpower:hover{
+  scale: 1.2;
+    perspective: 800px;
+  transform: 
+  rotateX(36deg)
+  rotate(15deg);
+  border-radius: 20px;
+  box-shadow: 0 0 20px skyblue,
+  0 0 25px red,
+  0 0 30px orange
+  ;
+}
+#Addcoins:active,
+#Setcoins:active,
+#Addpower:active,#Setpower:active,#announcebtn:active,#Showpower:active{
+  scale: 0.9;
+}
+#click:active,#rebclick:active{
+  scale: .9;
+}
+#Showpower{
+  padding: 40px 45px;
+  background: cyan;
+  border-radius: 20px;
+  border:  none;
+}
+#anbox{
+  position: absolute;
+  padding: 200px 220px;
+  background: linear-gradient(red,cyan);
+  box-shadow: 0 0 40px cyan,0 0 50px midnightblue;
+  top: -600px;
+  border-radius: 20px;
+  left: 78vh;
+  transition: .8s;
+  opacity: .8;
+  font-size: 2.5rem;
+}
+*{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* //variables
+let reached1=false;
+let reached50=false;
+let reached100=false;
+let reached1000=false;
+let reached10000=false;
+let reached100000=false; */
+#adlogo{
+  position: fixed;
+  left: 185vh;
+  top: 90px;
+width: 180px;
+  height: 180px;
+  object-fit:contain;
+  background-size: 100%;
+  background: linear-gradient(red,cyan);
+  border-radius: 20px;
+  font-size: 14rem;
+  transition: .8s;
+}
+#adlogo:hover{
+    perspective: 800px;
+  transform: 
+  rotateX(44deg)
+  rotate(15deg);
+  scale: 1.2;
+}
+#adlogo:active{
+  scale: .8;
+}
+#ownerprof{
+  border-radius: 20px;
+  width: 380px;
+  height: 320px;
+  top: 300px;
+  left: 100px;
+  transition: .8s;
+  color: white;
+  background: linear-gradient(red,skyblue);
+  position: relative;
+font-size: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+}
+.sqvbtnc{
+  position: absolute;
+  padding: 30px 35px;
+  border-radius: 20px;
+  border: 6px solid cyan;
+  background: linear-gradient(red,orange);
+  color: white;
+  font-size: 1.3rem;
+  transition: .2s;
+}
+.sqvbtnc:active{
+  scale: .8;
+}
